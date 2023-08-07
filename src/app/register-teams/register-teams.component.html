@@ -1,0 +1,31 @@
+<div class="fullscreen-bg">
+  <div class="central-div">
+    <div style="justify-content: center;">
+      <h1 style="font-size: 24px;">Equipes para o Torneio</h1>
+
+    </div>
+    <div>
+      <h2 style="font-size: 16px;">(Máx. 8 Equipes)</h2>
+    </div>
+    <div class="input-div">
+      <input class="input" type="text" placeholder="Insira o nome da equipe" [(ngModel)]="newTeam">
+    </div>
+    <div>
+      <button (click)="addNewTeam()" class="button">Adicionar Equipe</button>
+    </div>
+    <div class="list-div">
+      <div class="team-list">
+        <ul>
+          <li *ngFor="let team of teams">
+            <h4>{{ team }}</h4>
+            <span class="remove-button" (click)="removeTeam(team)">X</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="haveError" class="error-message">
+      O número de equipes deve ser igual a 8!
+    </div>
+    <button style="margin-top: 20px;" (click)="navigateToTournament()" class="button">Ir para o chaveamento</button>
+  </div>
+</div>

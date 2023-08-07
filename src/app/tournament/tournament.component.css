@@ -1,0 +1,29 @@
+.team {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  width: 25vh;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.battle {
+  width: 25vh;
+  margin: 40px
+}
+
+.bracket-stage {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url('../../assets/challengeBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  width: 100%;
+}

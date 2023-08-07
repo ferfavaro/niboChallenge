@@ -1,0 +1,64 @@
+<div class="bracket-stage">
+  <div class="first-round">
+    <div class="battle">
+      <div class="team" (click)="selectWinner(0, teams[0])">
+        {{ teams[0] }}
+      </div>
+      <div class="team" (click)="selectWinner(0, teams[1])">
+        {{ teams[1] }}
+      </div>
+    </div>
+    <div class="battle">
+      <div class="team" (click)="selectWinner(1, teams[2])">
+        {{ teams[2] }}
+      </div>
+      <div class="team" (click)="selectWinner(1, teams[3])">
+        {{ teams[3] }}
+      </div>
+    </div>
+    <div class="battle">
+      <div class="team" (click)="selectWinner(2, teams[4])">
+        {{ teams[4] }}
+      </div>
+      <div class="team" (click)="selectWinner(2, teams[5])">
+        {{ teams[5] }}
+      </div>
+    </div>
+    <div class="battle">
+      <div class="team" (click)="selectWinner(3, teams[6])">
+        {{ teams[6] }}
+      </div>
+      <div class="team" (click)="selectWinner(3, teams[7])">
+        {{ teams[7] }}
+      </div>
+    </div>
+  </div>
+  <div class="second-round">
+    <div class="battle">
+      <div class="team" (click)="selectWinner(4, selectedWinners[0])">
+        {{ selectedWinners[0] }}
+      </div>
+      <div class="team" (click)="selectWinner(4, selectedWinners[1])">
+        {{ selectedWinners[1] }}
+      </div>
+    </div>
+    <div class="battle">
+      <div class="team" (click)="selectWinner(5, selectedWinners[2])">
+        {{ selectedWinners[2] }}
+      </div>
+      <div class="team" (click)="selectWinner(5, selectedWinners[3])">
+        {{ selectedWinners[3] }}
+      </div>
+    </div>
+  </div>
+  <div class="third-round">
+    <div class="battle">
+      <div class="team" (click)="selectWinner(6, selectedWinners[4])">
+        {{ selectedWinners[4] }}
+      </div>
+      <div class="team" (click)="selectWinner(6, selectedWinners[5])">
+        {{ selectedWinners[5] }}
+      </div>
+    </div>
+  </div>
+</div>
