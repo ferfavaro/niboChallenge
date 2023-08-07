@@ -76,7 +76,7 @@ body, html {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column-reverse; /* Inverte a ordem dos itens */
+  flex-direction: column-reverse;
 }
 
 li {
